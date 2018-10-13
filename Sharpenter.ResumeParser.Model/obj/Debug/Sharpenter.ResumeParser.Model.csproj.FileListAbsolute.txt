@@ -1,5 +1,0 @@
-C:\Users\Ernest Mallett\Desktop\New folder (5)\Sharpenter.ResumeParser.Model\bin\Debug\Sharpenter.ResumeParser.Model.dll
-C:\Users\Ernest Mallett\Desktop\New folder (5)\Sharpenter.ResumeParser.Model\bin\Debug\Sharpenter.ResumeParser.Model.pdb
-C:\Users\Ernest Mallett\Desktop\New folder (5)\Sharpenter.ResumeParser.Model\obj\Debug\Sharpenter.ResumeParser.Model.csproj.CoreCompileInputs.cache
-C:\Users\Ernest Mallett\Desktop\New folder (5)\Sharpenter.ResumeParser.Model\obj\Debug\Sharpenter.ResumeParser.Model.dll
-C:\Users\Ernest Mallett\Desktop\New folder (5)\Sharpenter.ResumeParser.Model\obj\Debug\Sharpenter.ResumeParser.Model.pdb

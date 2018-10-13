@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
@@ -51,9 +52,13 @@
       <Name>Sharpenter.ResumeParser.Model</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /Y /R "$(TargetPath)" "$(SolutionDir)Sharpenter.ResumeParser.UI.Console\bin\$(ConfigurationName)\InputReaders"
+    <PostBuildEvent>mkdir $(SolutionDir)Sharpenter.ResumeParser.UI.Console\bin\$(ConfigurationName)\InputReaders"
+xcopy /Y /R "$(TargetPath)" "$(SolutionDir)Sharpenter.ResumeParser.UI.Console\bin\$(ConfigurationName)\InputReaders"
 xcopy /Y /R "$(TargetDir)Sharpenter.ResumeParser.InputReader.Doc.pdb" "$(SolutionDir)Sharpenter.ResumeParser.UI.Console\bin\$(ConfigurationName)\InputReaders"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
